@@ -1,18 +1,18 @@
 package ch.jntme.bfh.se.decoratorexample;
 
-public class Cream extends BeverageDecorator {
+public class Cinnamon extends BeverageDecorator {
 
-    public Cream(Beverage article) {
+    public Cinnamon(Beverage article) {
         super(article);
     }
 
     @Override
     public double getPrice() {
-        return beverage.getPrice() + 0.5;
+        return super.getPrice() + .5;
     }
 
     @Override
     public String getName() {
-        return beverage.getName() + ", Cream";
+        return super.getName() + ", Cinnamon";
     }
 }

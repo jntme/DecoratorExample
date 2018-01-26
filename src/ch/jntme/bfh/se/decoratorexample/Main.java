@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Items: " + b1.getName());
         System.out.println("Price: " + b1.getPrice());
 
-        Beverage b2 = new Sugar(new Cream(new TallCoffee()));
+        Beverage b2 = new Cinnamon(new Sugar(new Cream(new TallCoffee())));
         System.out.println("Items: " + b2.getName());
         System.out.println("Price: " + b2.getPrice());
     }

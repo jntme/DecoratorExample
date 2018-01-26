@@ -1,11 +1,10 @@
 package ch.jntme.bfh.se.decoratorexample;
 
-public class Sugar extends Beverage {
+public class Sugar extends BeverageDecorator {
 
-    Beverage beverage = null;
 
-    public Sugar(Beverage beverage) {
-        this.beverage = beverage;
+    public Sugar(Beverage article) {
+        super(article);
     }
 
     @Override
